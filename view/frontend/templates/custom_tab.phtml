@@ -1,0 +1,23 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \TimBarretto\ProductSizeGuide\Block\SizeGuide $block  */
+?>
+<?php
+
+$attributeCode = 'sizeguide';
+
+//Use this to get the identifier from a text field
+//$blockIdentifier = $block->getProduct()->getData($attributeCode);
+
+//Use this to get the identifier from a dropdown
+$blockIdentifier = $block->getProduct()->getAttributeText($attributeCode);
+
+?>
+<?php if($blockIdentifier && $block->isEnabled()): ?>
+    <?php
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($blockIdentifier)->toHtml(); ?>
+<?php endif; ?>

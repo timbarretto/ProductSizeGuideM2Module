@@ -1,0 +1,24 @@
+{
+  "category_name": "Clothingxxx",
+  "categories": [{
+    "category_name": "Trousersxxx",
+    "products": [{
+      "product_name": "Smart Trousersxxx"
+    },
+      {
+        "product_name": "Casual Trousersxxx"
+      }
+    ]
+  },
+    {
+      "category_name": "Shirtsxxx",
+      "products": [{
+        "product_name": "Smart  Shirtxxx"
+      },
+        {
+          "product_name": "Casual  Shirtxxx"
+        }
+      ]
+    }
+  ]
+}
